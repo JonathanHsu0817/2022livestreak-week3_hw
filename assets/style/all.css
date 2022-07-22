@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,"Roboto Mono", 'Noto Sans TC',"Microsoft JhengHei","Helvetica Neue", monospace, Arial, sans-serif;
+  line-height: 1.5; }
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-left: 36px;
+  padding-right: 36px; }
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle; }
+  img:hover {
+    opacity: 80%; }
+
+h1 {
+  font-size: 64px;
+  font-weight: 900; }
+
+h2 {
+  font-size: 48px;
+  font-weight: 700; }
+
+h3 {
+  font-size: 48px; }
+
+p.title {
+  font-size: 24px; }
+
+p.sub {
+  color: #DEE2E6; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    opacity: 80%; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .d-flex.jcc {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .d-flex.jcfe {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .d-flex.jcsd {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .d-flex.jcsb {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .d-flex.aic {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .d-flex.fxww {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.tac {
+  text-align: center; }
+
+.px2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.px6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.px8 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.pb8 {
+  padding-bottom: 2rem; }
+
+.mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem; }
+
+.mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem; }
+
+.mx-8 {
+  margin-left: -2rem;
+  margin-right: -2rem; }
+
+.mt6 {
+  margin-top: 1.5rem; }
+
+.mb1 {
+  margin-bottom: 0.25rem; }
+
+.mb2 {
+  margin-bottom: 0.5rem; }
+
+.mb3 {
+  margin-bottom: 0.75rem; }
+
+.mb4 {
+  margin-bottom: 1rem; }
+
+.mb5 {
+  margin-bottom: 1.25rem; }
+
+.mb6 {
+  margin-bottom: 1.5rem; }
+
+.mb7 {
+  margin-bottom: 1.75rem; }
+
+.mb8 {
+  margin-bottom: 2rem; }
+
+.mb10 {
+  margin-bottom: 2.5rem; }
+
+.mb12 {
+  margin-bottom: 3rem; }
+
+.mb14 {
+  margin-bottom: 3.5rem; }
+
+.mb17 {
+  margin-bottom: 4.25rem; }
+
+.mb24 {
+  margin-bottom: 6rem; }
+
+.header {
+  background-color: #AA0601;
+  padding: 12px 0; }
+  .header a {
+    color: #fff; }
+  .header .logo {
+    width: 80px;
+    line-height: 48px;
+    background-image: url("../images/logo-white.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer; }
+  .header .menu {
+    width: 80%; }
+
+.footer {
+  background-color: #AA0601;
+  padding: 48px 0 40px;
+  color: #fff; }
+  .footer a, .footer span {
+    color: #fff; }
+  .footer .platform img {
+    width: 40px; }
+  .footer .contact .tel span, .footer .contact .email span {
+    font-size: 36px;
+    margin-right: 22px; }
+  .footer .contact .tel a, .footer .contact .email a {
+    font-size: 36px; }
+  .footer .contact .email {
+    border-bottom: 1px solid #fff; }
+
+.btn {
+  text-decoration: none;
+  color: #000;
+  padding: 11px 0 10px;
+  text-align: center; }
+  .btn:hover {
+    opacity: 80%; }
+  .btn-primary {
+    background: #AA0601;
+    color: #fff; }
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
+
+/*# sourceMappingURL=all.css.map */
