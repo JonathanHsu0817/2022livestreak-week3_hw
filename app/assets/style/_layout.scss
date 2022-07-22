@@ -1,0 +1,55 @@
+.header {
+    background-color: $primary-color;
+    padding: 12px 0;
+    a{
+        color: #fff;
+    }
+    .logo{
+        width: 80px;
+        line-height: 48px;
+        background-image: url("../images/logo-white.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .menu{
+        width: 80%;
+    }
+  }
+  
+  .footer {
+    background-color: $primary-color;
+    padding: 48px 0 40px;
+    color: #fff;
+
+    a,span{
+        color:#fff;
+    }
+
+    .platform{
+        img{
+           width: 40px; 
+        }
+    }
+
+    .contact{
+        .tel,.email{
+            span{
+                font-size: $font-size-base-l;
+                margin-right: 22px;
+            }
+            a{
+                font-size: $font-size-base-l;
+            }
+        }
+        .email{
+            border-bottom: 1px solid #fff;
+        }
+    }
+  }
+  
+  

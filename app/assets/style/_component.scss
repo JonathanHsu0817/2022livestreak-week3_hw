@@ -1,0 +1,21 @@
+.btn{
+    text-decoration: none;
+    color: #000;
+    padding: 11px 0 10px;
+    text-align: center;
+    &:hover{
+        opacity: 80%;
+    }
+    &-primary{
+        background: $primary-color;
+        color: #fff;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
