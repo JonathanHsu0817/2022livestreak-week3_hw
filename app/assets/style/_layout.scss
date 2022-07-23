@@ -1,6 +1,6 @@
 .header {
     background-color: $primary-color;
-    padding: 12px 0;
+    padding: 12px 24px;
     a{
         color: #fff;
     }
@@ -19,20 +19,28 @@
     .menu{
         width: 80%;
     }
+    .submenu{
+        display: none;
+    }
   }
   
   .footer {
     background-color: $primary-color;
-    padding: 48px 0 40px;
+    padding: 48px 24px 40px;
     color: #fff;
 
     a,span{
         color:#fff;
     }
-
-    .platform{
-        img{
-           width: 40px; 
+    .container{
+        position: relative;
+        .platform{
+            position: absolute;
+            top:0;
+            right:36px;
+            img{
+               width: 40px; 
+            }
         }
     }
 
@@ -52,4 +60,63 @@
     }
   }
   
+
+  @media(max-width: 767px){
+    .header{
+        padding: 16px 8px 15px 3px;
+        .menu{
+            display: none;
+        }
+        .submenu{
+            display: block;
+            a{
+                display: inline-block;
+            }
+            span{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .footer{
+        padding: 24px 0;
+        .container{
+            .navbar{
+                display: none;
+            }
+            .platform{
+                img{
+                    width: 24px;
+                }
+            } 
+        }
+        
+        .contact{
+            .tel,.email{
+                span{
+                    font-size: 18px;
+                }
+                a{
+                    font-size: $font-size-base-xs;
+                }
+            }
+            .tel{
+                margin-top: 0;
+            }
+            .email{
+                padding-bottom: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .copyright{
+            flex-direction: column;
+            .policy{
+                flex-direction: column;
+                li{
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+  }
   
