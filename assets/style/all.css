@@ -323,7 +323,7 @@ a {
 
 .banner {
   height: 92.9vh;
-  background-image: url("/assets/images/home-header.png");
+  background-image: url("../images/home-header.png");
   background-size: cover;
   background-position: center; }
   .banner .container {
