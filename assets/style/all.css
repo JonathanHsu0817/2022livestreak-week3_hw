@@ -232,7 +232,7 @@ a {
   .header .logo {
     width: 80px;
     line-height: 48px;
-    background-image: url("../images/logo-white.png");
+    background-image: url("/assets/images/logo-white.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -323,7 +323,7 @@ a {
 
 .banner {
   height: 92.9vh;
-  background-image: url("../images/home-header.png");
+  background-image: url("/assets/images/home-header.png");
   background-size: cover;
   background-position: center; }
   .banner .container {
