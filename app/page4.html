@@ -1,0 +1,45 @@
+---
+title: 門市分店據點
+layout: ./app/layout.ejs
+engine: ejs
+current: page4
+---
+
+<section class="branchStore">
+    <div class="container">
+        <h1>門市據點</h1>
+        <div class="store-selection d-flex mb10">
+            <p class="mr4">選擇分店</p>
+            <select name="store_city" id="store-place">
+                <option value="Taipei">台北中山旗艦店</option>
+                <option value="Taichung">台北綠園店</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="store-content d-flex mx-3 fxww">
+            <div class="store-card d-flex fxdc px3">
+                <img src="../assets/images/storepage-1.png" alt="store-pic1" class="store-pic-pc">
+                <img src="../assets/images/store-1.png" alt="store-pic1" class="store-pic-mobile">
+                <div class="store-card-information">
+                    <h2>台北中山旗艦店</h2>
+                    <ul class="store-information">
+                        <li class="tel d-flex aic mb2">
+                            <span class="material-symbols-outlined mr2">call</span>
+                            <p>電話：<a href="tel:+"(02)000-1234>(02)000-1234</a></p>
+                        </li>
+                        <li class="time d-flex aic mb2">
+                            <span class="material-symbols-outlined mr2">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="location d-flex aic">
+                            <span class="material-symbols-outlined mr2">location_on</span>
+                            <p>地址：<a href="#">台北市中山區南京東路25巷2-1號</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="../assets/images/map.png" alt="map" class="map px3">
+        </div>
+    </div>
+</section>

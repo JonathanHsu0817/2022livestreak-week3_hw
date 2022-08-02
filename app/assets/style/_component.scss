@@ -11,6 +11,52 @@
         background: $primary-color;
         color: #fff;
     }
+    &-secondary{
+        background: #fff;
+        color:#000;
+        border-bottom: 8px solid transparent;
+        &:hover{
+            border-bottom: 8px solid $primary-color;
+            opacity: 80%;
+        }
+        &.active{
+            border-bottom: 8px solid $primary-color;
+        }
+    }
+    &.page{
+        border: 1px solid #555555;
+        padding: 12px 16px;
+        margin-right: -1px;
+        &.active{
+            background: #000;
+            color: #fff;
+        }
+        &.up{
+            padding: 12px 12px;
+        }
+        &.down{
+            padding: 12px 12px;
+        }
+    }
+    &.dark{
+        background: #000;
+        color: #fff;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 16px 0;
+    }
+    &.more{
+        color: $secondary-color;
+        font-size: $font-size-base-l;
+        font-weight: 900;
+        padding: 0;
+    }
+    &.moreMobile{
+        color: #555;
+        font-size: $font-size-base-xs;
+        font-weight: 400;
+        padding: 0;
+    }
 }
 
 .material-symbols-outlined {
