@@ -2,14 +2,15 @@
 title: 門市據點
 layout: ./app/layout.ejs
 engine: ejs
-current: page3
+current: service-point
 ---
 
 <section class="allStore">
     <div class="container">
         <h1>門市據點</h1>
         <div class="store-selection d-flex mb10">
-            <p class="mr4">選擇地區</p>
+            <label for="place"></label>
+            <p class="mr4" id="place">選擇地區</p>
             <select name="store_city" id="store-place">
                 <option value="Taipei">台北市</option>
                 <option value="Taichung">台中市</option>
@@ -34,7 +35,7 @@ current: page3
                         <p>地址：<a href="page4.html">台北市中山區南京東路25巷2-1號</a></p>
                     </li>
                 </ul>
-                <a href="page4.html" class="btn dark">詳細資訊</a>
+                <a href="service-point-TaipeiZhongshen.html" class="btn dark">詳細資訊</a>
             </li>
             <li class="store-card px3">
                 <a href="#"><img src="./assets/images/store-2.png" alt="store-2"></a>

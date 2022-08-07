@@ -7,14 +7,6 @@
     .logo{
         width: 80px;
         line-height: 48px;
-        background-image: url("../images/logo-white.png");
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center;
-        text-indent: 101%;
-        white-space: nowrap;
-        overflow: hidden;
-        cursor: pointer;
         &:hover{
             opacity: 80%;
         }
@@ -27,46 +19,71 @@
     }
   }
   
+  .mobile-menu{
+    display: none;
+    &.active{
+        display: block;
+    }
+    background: $primary-color;
+    .container{
+        padding: 0;
+    }
+    .mobile-menu-list{
+        li{
+            width: 25%;
+            a{
+                display: block;
+                text-align: center;
+                color: #fff;
+                padding: 10px 20px;
+                border: 1px solid #fff;
+            }
+        } 
+      }
+  }
+  
   .footer {
     background-color: $primary-color;
-    padding: 48px 24px 40px;
+    padding: 48px 24px 32px;
     color: #fff;
-
+    .container{
+        padding-bottom: 32px;
+        border-bottom: 1px solid #fff;
+    }
     a,span{
         color:#fff;
     }
-    .container{
-        position: relative;
-        .platform{
-            position: absolute;
-            top:0;
-            right:36px;
-            img{
-               width: 40px; 
-            }
-        }
-    }
-
     .contact{
         .tel,.email{
             span{
-                font-size: $font-size-base-l;
-                margin-right: 22px;
+                font-size: $font-size-subtitle;
+                margin-right: 16px;
             }
             a{
                 font-size: $font-size-base-l;
             }
         }
-        .email{
-            border-bottom: 1px solid #fff;
+    }
+    .platform{
+        img{
+            width: 48px;
+        }
+    }
+    .law{
+        padding-top: 32px;
+        .container{
+            padding-bottom: 0;
+            border-bottom: 0;
         }
     }
   }
   
 
-  @media(max-width: 767px){
+  @media(max-width: 720px){
+    .container{
+        max-width: 100%;
+    }
     .header{
-        padding: 16px 8px 15px 3px;
         .menu{
             display: none;
         }
@@ -78,51 +95,61 @@
             span{
                 font-size: 30px;
             }
-        }
+        } 
     }
-
     .footer{
-        padding: 24px 0;
+        background-color: $primary-color;
+        padding: 24px 0px 24px;
+        color: #fff;
         .container{
+            padding-bottom: 24px;
+            border-bottom: 1px solid #fff;
             .navbar{
                 display: none;
             }
-            .platform{
-                img{
-                    width: 24px;
-                    &:hover{
-                        opacity: 80%;
-                    }
-                }
-            } 
         }
-        
         .contact{
             .tel,.email{
                 span{
-                    font-size: 18px;
+                    font-size: $font-size-base-m;
+                    margin-right: 8px;
                 }
                 a{
                     font-size: $font-size-base-xs;
                 }
             }
-            .tel{
-                margin-top: 0;
-            }
-            .email{
-                padding-bottom: 1.5rem;
-                margin-bottom: 1rem;
+        }
+        .platform{
+            img{
+                width: 24px;
             }
         }
-        .copyright{
-            flex-direction: column;
+        .law{
+            padding-top: 16px;
+            p{
+                margin-bottom: 8px;
+            }
             .policy{
                 flex-direction: column;
                 li{
-                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    &.last{
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
     }
+  }
+
+  @media(max-width: 434px){
+    .mobile-menu{
+        .mobile-menu-list{
+            li{
+                width: 50%;
+                margin-top: -1px;
+            } 
+          }
+      }
   }
   
