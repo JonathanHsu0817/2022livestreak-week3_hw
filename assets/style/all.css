@@ -192,6 +192,9 @@ a {
   margin-left: -2rem;
   margin-right: -2rem; }
 
+.ml8 {
+  margin-left: 3rem; }
+
 .mr2 {
   margin-right: 0.5rem; }
 
@@ -348,15 +351,27 @@ a {
       padding-top: 16px; }
       .footer .law p {
         margin-bottom: 8px; }
-      .footer .law .policy {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .footer .law .policy li {
-          margin-bottom: 8px; }
-          .footer .law .policy li.last {
-            margin-bottom: 0; } }
+      .footer .law .policy li {
+        margin-bottom: 8px; }
+        .footer .law .policy li.last {
+          margin-bottom: 0; } }
+
+@media (max-width: 576px) {
+  .footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer .law .policy {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer .law .policy .last {
+      margin-left: 0; } }
 
 @media (max-width: 434px) {
   .mobile-menu .mobile-menu-list li {
@@ -508,8 +523,7 @@ a {
           -ms-flex-pack: center;
               justify-content: center; }
       .classic .classic-list .classic-card {
-        width: 45.3%;
-        margin: 0 25%; }
+        width: 100%; }
         .classic .classic-list .classic-card h3 {
           font-size: 48px;
           margin-bottom: 24px; } }
@@ -620,6 +634,9 @@ a {
     margin: 8px 0 16px;
     background: #FBF2F2;
     border: 1px solid #000; }
+  .contact-form form input[type="checkbox"] {
+    width: 24px;
+    margin: 0 4px 0 0; }
   .contact-form form textarea {
     width: 100%;
     padding: 6px 12px 106px;
@@ -628,8 +645,6 @@ a {
     background: #FBF2F2;
     border: 1px solid #000;
     margin-bottom: 16px; }
-  .contact-form .check-place span {
-    margin-right: 4px; }
   .contact-form .btn {
     width: 65.5%;
     margin: 0 auto; }
@@ -750,7 +765,7 @@ a {
       .main-product1 .main-product-list .main-product-card.pad {
         display: none; } }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .main-product1 h1 {
     font-size: 24px; }
   .main-product1 h2 {
@@ -762,7 +777,9 @@ a {
       width: 100%;
       margin-bottom: 24px; }
       .main-product1 .main-product-list .main-product-card.mobile {
-        display: none; }
+        display: none; } }
+
+@media (max-width: 434px) {
   .main-product1 .pagination .page {
     padding: 12px 15px; }
     .main-product1 .pagination .page.up {
@@ -840,7 +857,7 @@ a {
       .main-product2 .main-product-list .main-product-card span {
         font-size: 24px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .main-product2 h1 {
     font-size: 24px; }
   .main-product2 h2 {
@@ -852,7 +869,9 @@ a {
       width: 100%;
       margin-bottom: 24px; }
       .main-product2 .main-product-list .main-product-card.mobile {
-        display: none; }
+        display: none; } }
+
+@media (max-width: 434px) {
   .main-product2 .pagination .page {
     padding: 12px 15px; }
     .main-product2 .pagination .page.up {
@@ -868,7 +887,7 @@ a {
     padding-left: 16px;
     border-left: 8px solid #9F1213;
     margin-bottom: 32px; }
-  .allStore .store-selection p {
+  .allStore .store-selection label {
     font-size: 24px; }
   .allStore .store-selection select {
     width: 23.6%;
@@ -924,7 +943,7 @@ a {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-bottom: 24px; }
-      .allStore .store-selection p {
+      .allStore .store-selection label {
         font-size: 16px;
         margin-right: 8px; }
       .allStore .store-selection select {
@@ -943,7 +962,7 @@ a {
     margin-bottom: 32px; }
   .branchStore img:hover {
     opacity: 100%; }
-  .branchStore .store-selection p {
+  .branchStore .store-selection label {
     font-size: 24px; }
   .branchStore .store-selection select {
     width: 23.6%;
@@ -1021,7 +1040,7 @@ a {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .branchStore .store-selection p {
+      .branchStore .store-selection label {
         font-size: 16px;
         margin-right: 8px; }
       .branchStore .store-selection select {
