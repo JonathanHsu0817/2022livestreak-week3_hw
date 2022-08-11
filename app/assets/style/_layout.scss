@@ -130,12 +130,28 @@
                 margin-bottom: 8px;
             }
             .policy{
-                flex-direction: column;
                 li{
                     margin-bottom: 8px;
                     &.last{
                         margin-bottom: 0;
                     }
+                }
+            }
+        }
+    }
+  }
+
+  @media(max-width: 576px){
+    .footer{
+        .copyright{
+            flex-direction: column;
+        }
+        .law{
+            .policy{
+                justify-content: start;
+                flex-direction: column;
+                .last{
+                    margin-left: 0;
                 }
             }
         }

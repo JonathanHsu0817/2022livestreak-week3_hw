@@ -147,8 +147,7 @@
         .classic-list{
             justify-content: center;
             .classic-card{
-                width: 45.3%;
-                margin: 0 25%;
+                width: 100%;
                 h3{
                     font-size: $font-size-subtitle;
                     margin-bottom: 24px;
@@ -314,6 +313,10 @@
             background: $thirdly-color;
             border: 1px solid #000;
         }
+        input[type="checkbox"]{
+            width: 24px;
+            margin: 0 4px 0 0;
+        }
         textarea{
             width: 100%;
             padding: 6px 12px 106px;
@@ -324,11 +327,7 @@
             margin-bottom: 16px;
         }
     }
-    .check-place{
-        span{
-            margin-right: 4px;
-        }
-    }
+    
     .btn{
         width: 65.5%;
         margin: 0 auto;
@@ -527,7 +526,7 @@
     }
 }
 
-@media(max-width: 375px){
+@media(max-width: 576px){
     .main-product1{
         h1{
             font-size: $font-size-base-m;
@@ -546,6 +545,11 @@
                 }
             }
         }   
+    }
+}
+
+@media(max-width: 434px){
+    .main-product1{  
         .pagination{
             .page{
                 padding: 12px 15px;
@@ -674,7 +678,7 @@
     }
 }
 
-@media(max-width: 375px){
+@media(max-width: 576px){
     .main-product2{
         h1{
             font-size: $font-size-base-m;
@@ -693,6 +697,11 @@
                 }
             }
         }   
+    }
+}
+
+@media(max-width: 434px){
+    .main-product2{
         .pagination{
             .page{
                 padding: 12px 15px;
@@ -706,7 +715,6 @@
         } 
     }
 }
-
 //service-point.html
 //allstore
 .allStore{
@@ -719,7 +727,7 @@
         margin-bottom: 32px;
     }
     .store-selection{
-        p{
+        label{
             font-size: $font-size-base-m;
         }
         select{
@@ -788,7 +796,7 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 24px;
-            p{
+            label{
                 font-size: $font-size-base-xs;
                 margin-right: 8px;
             }
@@ -820,7 +828,7 @@
         }
     }
     .store-selection{
-        p{
+        label{
             font-size: $font-size-base-m;
         }
         select{
@@ -918,7 +926,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            p{
+            label{
                 font-size: $font-size-base-xs;
                 margin-right: 8px;
             }
